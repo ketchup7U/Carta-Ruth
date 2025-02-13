@@ -110,9 +110,10 @@ h1 {
     font-size: 14px;
     border: 3px dotted var(--texto);
     padding: 10px;
-    height: auto;
+    height: 100%;
     line-height: 14px;
     cursor: pointer;
+    overflow-Y: scroll;
 }
 
 .corazon {
@@ -198,22 +199,12 @@ h1 {
         height: 250px;
     }
 
-    .carta {
-        width: 280px; /* Reducido para que quepa dentro del sobre */
-        margin: 0 auto; /* Centrar la carta */
-    }
-
-    .contenido {
-        font-size: 11px; /* Reducir ligeramente el tamaño de fuente */
-        padding: 8px; /* Reducir el padding */
-        line-height: 13px; /* Ajustar el interlineado */
-    }
-
     .sobre::before {
-        border-top: 150px solid var(--solapa-sobre);
+        border-top:150px solid var(--solapa-sobre) ;
         border-right: 150px solid transparent;
         border-left: 150px solid transparent;
     }
+
     .audio-container {
         max-width: 300px;
     }
